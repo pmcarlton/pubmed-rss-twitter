@@ -2,7 +2,7 @@
 
 ## Summary:
 
-This is a simple method for making a twitter bot from a pubmed RSS feed. It uses free / open software and does not depend on cloud services. You can customize or curate the output items at will.
+This is a simple method for making a twitter bot from a pubmed RSS feed. It uses free / open software and does not depend on cloud services. You can customize and curate the output items at will.
 
 ## Requirements:
 
