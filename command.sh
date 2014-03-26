@@ -1,1 +1,1 @@
-feedstail -f "{title}__{tags}__{author}__{link}" -r -u "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1HAC9OLsDE6PY4XyvgByLWB1ZfmgPH-Idx0mQ4N519GUzAK9OT" | perl rss-filter3.pl | ttytter -keyf=_meiosispapers -script &
+feedstail -f "{title}__{tags}__{author}__{link}" -r -u "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1HAC9OLsDE6PY4XyvgByLWB1ZfmgPH-Idx0mQ4N519GUzAK9OT" | perl rss-filter.pl | ttytter -keyf=_meiosispapers -script &
