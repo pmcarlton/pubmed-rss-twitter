@@ -2,16 +2,21 @@
 
 ## Summary:
 
-This is a simple method for making a twitter bot from a pubmed RSS feed. It uses free / open software and does not depend on cloud services. You can customize and curate the output items at will.
+This is a simple method for making a twitter bot from a pubmed RSS feed. It uses free / open software and does not depend on cloud services. You can customize and curate the output items at will. The principle of operation is:
+
+- fetch the latest feed items
+- output each item as formatted text
+- filter that text into a tweetable blurb
+- send it to twitter
 
 ## Requirements:
 
 - [perl](www.perl.org)
 - [python](www.python.org)
 - [pip](http://www.pip-installer.org/en/latest/installing.html), the python package manager
-- [feedstail](https://pypi.python.org/pypi/feedstail/), an RSS watcher
-- [ttytter](http://www.floodgap.com/software/ttytter/), a command-line twitter client
-    - Available in most Linux / Mac package systems (Homebrew, Debian, Ubuntu, &c.)
+- [feedstail](https://pypi.python.org/pypi/feedstail/), an RSS watcher, which you install with `pip` above
+- [ttytter](http://www.floodgap.com/software/ttytter/), a command-line twitter client  
+available in most Linux / Mac package systems (Homebrew, Debian, Ubuntu, &c.)
 
 ## Howto:
 
