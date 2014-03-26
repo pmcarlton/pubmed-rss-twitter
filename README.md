@@ -2,7 +2,7 @@
 
 ## Summary:
 
-This is a simple method for making a twitter bot from a pubmed RSS feed. It uses free / open software and does not depend on cloud services. You can customize/curate the output items at will.
+This is a simple method for making a twitter bot from a pubmed RSS feed. It uses free / open software and does not depend on cloud services. You can customize or curate the output items at will.
 
 ## Requirements:
 
@@ -15,7 +15,7 @@ This is a simple method for making a twitter bot from a pubmed RSS feed. It uses
 
 ## Howto:
 
-1. If you don't already have a dedicated twitter account for the feed, or haven't defined an RSS feed, read steps 1 and 2 (and the rest too) of Rob Lanfear's [instructions](https://github.com/roblanf/phypapers)
+1. If you don't already have a dedicated twitter account for the feed, or haven't defined an RSS feed, read steps 1 and 2 (and the rest too while you're there) of Rob Lanfear's [instructions](https://github.com/roblanf/phypapers)
 1. Install python and pip from the above URLs (in Requirements)
 2. Use pip to install feedstail: `pip install feedstail`
 3. Install ttytter from source or from your package manager, e.g. `brew install ttytter` for [brew](http://brew.sh) on Mac
@@ -23,7 +23,7 @@ This is a simple method for making a twitter bot from a pubmed RSS feed. It uses
 5. Place the [`rss-filter.pl`](https://github.com/pmcarlton/pubmed-rss-twitter/blob/master/rss-filter.pl) file somewhere handy
 6. Run feedstail in the background with your url(s) of choice, pipe the output into `rss-filter.pl`, and thence to ttytter.  
 For example see below or  [`command.sh`](https://github.com/pmcarlton/pubmed-rss-twitter/blob/master/command.sh)
-7. Enjoy the firehose of scientific literature
+7. Enjoy your custom firehose of scientific literature
 
 ## Example:
 
