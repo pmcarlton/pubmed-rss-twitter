@@ -4,10 +4,9 @@
 
 This is a simple method for making a twitter bot from a pubmed RSS feed. It will work on any Mac or *nix, uses free / open software and does not depend on cloud services. You can customize and curate the output items at will. The principle of operation is:
 
-- fetch the latest feed items
-- output each item as formatted text
-- filter that text into a tweetable blurb
-- send it to twitter
+- fetch the latest feed items as formatted text (using `feedstail`)
+- change each item into a tweetable blurb (using `rss-filter.pl`)
+- send it to twitter (using `ttytter`)
 
 ## Requirements:
 
