@@ -2,7 +2,7 @@
 
 ## Summary:
 
-This is a simple method for making a twitter bot from a pubmed RSS feed. It uses free / open software and does not depend on cloud services. You can customize and curate the output items at will. The principle of operation is:
+This is a simple method for making a twitter bot from a pubmed RSS feed. It will work on any Mac or *nix, uses free / open software and does not depend on cloud services. You can customize and curate the output items at will. The principle of operation is:
 
 - fetch the latest feed items
 - output each item as formatted text
@@ -39,6 +39,7 @@ For example see below or  [`command.sh`](https://github.com/pmcarlton/pubmed-rss
 - It would probably be a good idea to create a `launchd` script to run this so it happens in the background. 
 - The behavior of `feedstail` seems to be to always fetch the "newest" items, so stopping and re-starting may result in repeat postings. This behavior can be filtered out in `rss-filter.pl` if you can figure out a good way.
 - So far this only does Pubmed RSS. Other sources likely have their own idiosyncratic RSS formats. To extend this, the `rss-filter` program(s) will need to have a different routine for each source.
+- TODOs: non-Pubmed sources, easier running of the command
 
 ### Acknowledgements:
 
