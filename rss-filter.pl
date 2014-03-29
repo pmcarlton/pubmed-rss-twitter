@@ -1,12 +1,14 @@
 use strict;
 $|=1;   #set autoflush
-use utf8; binmode STDOUT, ":utf8"; #needed for Unicode
+use utf8; 
+binmode STDIN, ":utf8"; #needed for Unicode
+binmode STDOUT, ":utf8"; #needed for Unicode
 
 #preprocess the input stream first
-my $w=chr(0xc2).chr(0xa0); #this is a weird space character that you get sometimes in pubmed!
+#my $w=chr(0xc2).chr(0xa0); #this is a weird space character that you get sometimes in pubmed!
 my $tlen=85; #how many characters of title to print out
 while(<STDIN>) {
-s/($w)/ /; #replace the weird space with a real space
+#s/($w)/ /; #replace the weird space with a real space
 s/PLoS/PLOS/; #all-uppercase now
 
 my @a=split("__",$_); #we separated each field with "__", now process each field at a time
