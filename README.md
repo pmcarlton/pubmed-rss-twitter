@@ -2,11 +2,11 @@
 
 ## Summary:
 
-This is a simple method for making a twitter bot from a pubmed RSS feed. It will work on any Mac or *nix, uses free / open software and does not depend on cloud services. You can customize and curate the output items at will. The principle of operation is:
+This is a simple method for making a Twitter bot from a pubmed or bioRχiv RSS feed. It will work on any Mac or *nix, uses free / open software and does not depend on any proprietary or third-party services. You can customize and curate the output items at will. The principle of operation is:
 
-- fetch the latest feed items as formatted text (using `feedstail`)
+- fetch the latest feed items as formatted text (using `feedstail`, a command-line RSS reader)
 - change each item into a tweetable blurb (using `rss-filter.pl`)
-- send it to twitter (using `ttytter`)
+- send it to Twitter (using `ttytter`, a command-line Twitter client)
 
 ## Requirements:
 
@@ -19,7 +19,7 @@ available in most Linux / Mac package systems (Homebrew, Debian, Ubuntu, &c.)
 
 ## Howto:
 
-1. If you don't already have a dedicated twitter account for the feed, or haven't defined an RSS feed, read steps 1 and 2 (and the rest too while you're there) of Rob Lanfear's [instructions](https://github.com/roblanf/phypapers)
+1. If you don't already have a dedicated Twitter account for the feed, or haven't defined an RSS feed, read steps 1 and 2 (and the rest too while you're there) of Rob Lanfear's [instructions](https://github.com/roblanf/phypapers)
 1. Install python and pip from the above URLs (in Requirements)
 2. Use pip to install feedstail: `pip install feedstail`
 3. Install ttytter from source or from your package manager, e.g. `brew install ttytter` for [brew](http://brew.sh) on Mac
@@ -35,10 +35,10 @@ For example see below or  [`command.sh`](https://github.com/pmcarlton/pubmed-rss
 
 ### Notes:
 
-- It would probably be a good idea to create a `launchd` script to run this so it happens in the background. 
+- Now with bioRχiv support!
+- Once every few months or so, the bot stops—I have no idea why, but restarting it always fixes it. 
 - The behavior of `feedstail` seems to be to always fetch the "newest" items, so stopping and re-starting may result in repeat postings. This behavior can be filtered out in `rss-filter.pl` if you can figure out a good way.
-- So far this only does Pubmed RSS. Other sources likely have their own idiosyncratic RSS formats. To extend this, the `rss-filter` program(s) will need to have a different routine for each source.
-- TODOs: non-Pubmed sources, easier running of the command
+- TODOs: easier running of the command
 
 ### Acknowledgements:
 
