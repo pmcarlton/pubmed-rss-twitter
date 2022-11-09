@@ -42,5 +42,6 @@ For example see below or  [`command.sh`](https://github.com/pmcarlton/pubmed-rss
 
 ### Acknowledgements:
 
-Thanks to @caseybergman for the idea and @RobLanfear for sharing implementation details
-<a rel="me" href="https://mstdn.science/@meiosis_papers">Mastodon</a>
+Thanks to @caseybergman for the idea and @RobLanfear for sharing implementation details  
+
+<a rel="me" href="https://mstdn.science/@meiosis_papers">🐘</a>
